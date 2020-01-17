@@ -18,7 +18,6 @@ eleventh <- all_numbers[11]
 # of `all_numbers`
 some_numbers <- all_numbers[2:5]
 
-
 # Create a vector `even` that holds the even numbers from 1 to 100
 even <- seq(2, 100, 2)
 
