@@ -40,4 +40,4 @@ add_pizza <- function(meal_vector) {
 }
 
 # Create a vector `better_meals` that is all your meals, but with pizza!
-better_meals <- add_pizza(meals)
+better_meals <- lapply(meals, add_pizza)
