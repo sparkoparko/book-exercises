@@ -1,7 +1,6 @@
 # Exercise 2: a basic Shiny app
 
 # Load the `shiny` package
-install.packages("shiny")
 library("shiny")
 
 # Define a new `ui` variable. This variable should be assigned a `fluidPage()` layout
@@ -15,17 +14,17 @@ my_ui <- fluidPage(
   # It should have a default value of 0 and a minimum value of 0
   # Hint: look up the function's arguments in the documentation!
   numericInput(value = 0, min = 0, label = "Price (in dollors)",
-               inputID = "price"),
+               inputId = "price"),
   
   # A second `numericInput()` widget with the label "Quantity"
   # It should have a default value of 1 and a minimum value of 1  
   numericInput(value = 1, min = 1, label = "Quantity",
-               inputID = "quantity"),
+               inputId = "quantity"),
   
   # The word "Cost", strongly bolded
   strong("Cost"),
   # A `textOutput()` output of a calculated value labeled `cost`
-  textOutput(label = "cost", outputID = "cost")
+  textOutput(outputId = "cost")
 )
 
 # Define a `server` function (with appropriate arguments)
